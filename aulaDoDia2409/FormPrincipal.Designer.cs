@@ -39,9 +39,10 @@
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrosToolStripMenuItem });
-            menuStrip1.Location = new Point(3, 64);
+            menuStrip1.Location = new Point(3, 48);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(794, 28);
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(694, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -49,28 +50,30 @@
             // 
             cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { alunosToolStripMenuItem });
             cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            cadastrosToolStripMenuItem.Size = new Size(88, 24);
+            cadastrosToolStripMenuItem.Size = new Size(71, 20);
             cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
             // alunosToolStripMenuItem
             // 
             alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
-            alunosToolStripMenuItem.Size = new Size(137, 26);
+            alunosToolStripMenuItem.Size = new Size(180, 22);
             alunosToolStripMenuItem.Text = "Alunos";
             alunosToolStripMenuItem.Click += alunosToolStripMenuItem_Click;
             // 
             // FormPrincipal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.logo;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 345);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormPrincipal";
+            Padding = new Padding(3, 48, 3, 2);
             Text = "IFSP - Sistema de Gerenciamento Acadêmico";
             WindowState = FormWindowState.Maximized;
             FormClosing += FormPrincipal_FormClosing;
